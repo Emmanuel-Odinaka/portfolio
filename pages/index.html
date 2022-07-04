@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,7 +31,7 @@
         <h1>I'm <span style="color: hsl(248, 44%, 50%)">Odinaka</span></h1>
         <h1>Software developer</h1>
         <button class="button">Contact</button>
-        <div class="social-media">
+        <div class="social-media-img">
           <img class="socials" src="../images/linkedin.png" alt="linkedin" />
           <img class="socials" src="../images/twitter.png" alt="twitter" />
           <img class="socials" src="../images/github.png" alt="github" />
@@ -40,14 +41,14 @@
         <img class="profile_img" src="../images/me.png" alt="profile" />
       </section>
     </main>
-    <header>About</header>
+    <header><span class="underline">About</span></header>
     <section class="about-container">
       <section class="container">
         <img class="profile_img" src="../images/me.png" alt="profile" />
       </section>
-      <section>
+      <section class="text-info">
         <h1 style="font-size: 26px">Hey there</h1>
-        <p class="text-info">
+        <p>
           Odinaka is an energetic and pragmatic Frontend developer with a vision
           to develop world class product and simultaneously impact his immediate
           environment, He is skilled in HTML, CSS, JavaScript, Semantic ui, and
@@ -58,28 +59,35 @@
     </section>
 
     <!-- skills -->
-    <header>Skills</header>
+    <header><span class="underline">Skills</span></header>
     <section class="skills">
-      <section>
+      <section class="text-info">
         <h1 style="font-size: 26px">Professional Skills</h1>
-        <p class="text-info">
+        <p style="margin-bottom: 1rem;">
           In professionalism, I pay attention to details and build pixel perfect
           responsive pages.
         </p>
+        <section>
+          <img class="" src="../images/skills.png" alt="program" />
+        </section>
       </section>
       <section>
-        <img class="" src="../images/program.png" alt="program" />
+        <img class="" width="700" height="500" src="../images/program.png" alt="program" />
       </section>
     </section>
     <!-- work -->
-    <header>Skills</header>
+    <header><span class="underline">Work</span></header>
     <div class="project">
-      <section class="box">1</section>
-      <section class="box">2</section>
-      <section class="box">3</section>
+      <section class="box">
+        <a href="https://emmanuel-odinaka.github.io/solarProject"><img class="" width="350px" height="200px" src="../images/solar.png" alt="program" /></a>
+      </section>
+      <section class="box">
+        <a href="https://emmanuel-odinaka.github.io/solarProject"><img class="" width="350px" height="200px" src="../images/solar.png" alt="program" /></a>      </section>
+      <section class="box">
+        <a href="https://emmanuel-odinaka.github.io/solarProject"><img class="" width="350px" height="200px" src="../images/solar.png" alt="program" /></a>      </section>
     </div>
     <!-- contact -->
-    <header>Contact</header>
+    <header><span class="underline">Contact</span></header>
     <section class="contact">
       <form action="" class="form">
         <input type="text" placeholder="Name" />
@@ -92,9 +100,9 @@
     <footer>
       <h1>Odinaka</h1>
       <div class="social-media">
-        <img class="socials" src="../images/linkedin.png" alt="linkedin" />
-        <img class="socials" src="../images/twitter.png" alt="twitter" />
-        <img class="socials" src="../images/github.png" alt="github" />
+        <i class="fa fa-linkedin" style="font-size:24px; padding: .5rem;"></i>
+        <i class="fa fa-twitter" style="font-size:24px; padding: .5rem;"></i>
+        <i class="fa fa-github" style="font-size:24px; padding: .5rem;"></i>
       </div>
       <p>&copy; Emmanuel Odinaka. All rights reserved</p>
     </footer>
