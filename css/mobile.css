@@ -47,7 +47,7 @@
     display: none;
   }
     .hide-me {
-        display: hidden;
+        visibility: hidden;
     }
   
 }
