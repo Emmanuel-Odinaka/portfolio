@@ -43,5 +43,8 @@
   .parent-grid {
     margin-left: .8rem;
   }
+  .hide {
+    display: none;
+  }
   
 }
