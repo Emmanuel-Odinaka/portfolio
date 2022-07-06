@@ -6,47 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="./css//style.css" />
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="./css//mobile.css" />
+    <link rel="stylesheet" media="screen and (min-width: 1100px)" href="./css//widescreen.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
-  <body>
+  <body id="home">
     <nav class="nav-bar">
       <div class="logo">Odinaka</div>
       <ul class="links">
-        <li><a href="./pages/index.html">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Skills</a></li>
-        <li><a href="">Work</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
     <main class="main-container">
       <section class="container">
-        <h1>Hi,</h1>
-        <h1>I'm <span style="color: hsl(248, 44%, 50%)">Odinaka</span></h1>
-        <h1>Software developer</h1>
-        <button class="button">Contact</button>
-        <div class="social-media-img">
+        <div data-aos="fade-down">
+
+          <h1>Hi,</h1>
+          <h1>I'm <span style="color: hsl(248, 44%, 50%)">Odinaka</span></h1>
+          <h1>Software developer</h1>
+        </div>
+        <button class="button" data-aos="fade-down">Contact</button>
+        <div data-aos="fade-down" class="social-media-img">
           <img class="socials" src="../images/linkedin.png" alt="linkedin" />
           <img class="socials" src="../images/twitter.png" alt="twitter" />
           <img class="socials" src="../images/github.png" alt="github" />
         </div>
       </section>
-      <section class="container">
+      <section class="container" data-aos="fade-down">
         <img class="profile_img" src="../images/me.png" alt="profile" />
       </section>
     </main>
-    <header><span class="underline">About</span></header>
+    <br><br><br>
+    <header><span id="about" class="underline" data-aos="fade-down">About</span></header>
     <section class="about-container">
-      <section class="container">
+      <section class="container" data-aos="fade-down">
         <img class="profile_img" src="../images/me.png" alt="profile" />
       </section>
-      <section class="text-info">
+      <section class="text-info" data-aos="fade-down"> 
         <h1 style="font-size: 26px">Hey there</h1>
         <p>
           Odinaka is an energetic and pragmatic Frontend developer with a vision
@@ -59,52 +66,78 @@
     </section>
 
     <!-- skills -->
-    <header><span class="underline">Skills</span></header>
+    <header><span id="skills" class="underline" data-aos="fade-down">Skills</span></header>
     <section class="skills">
-      <section class="text-info">
+      <section class="text-info" data-aos="fade-down">
         <h1 style="font-size: 26px">Professional Skills</h1>
         <p style="margin-bottom: 1rem;">
           In professionalism, I pay attention to details and build pixel perfect
           responsive pages.
         </p>
-        <section>
-          <img class="" src="../images/skills.png" alt="program" />
+        <section data-aos="fade-down">
+          <img src="../images/skills.png" alt="program" />
         </section>
       </section>
-      <section>
-        <img class="" width="700" height="500" src="../images/program.png" alt="program" />
+      <section data-aos="fade-down">
+        <img class="skills_img" width="700" height="500" src="../images/program.png" alt="program" />
       </section>
     </section>
     <!-- work -->
-    <header><span class="underline">Work</span></header>
+    <header><span id="work" class="underline" data-aos="fade-down">Work</span></header>
     <div class="project">
-      <section class="box">
-        <a href="https://emmanuel-odinaka.github.io/solarProject"><img class="" width="350px" height="200px" src="../images/solar.png" alt="program" /></a>
+      <section class="box" data-aos="fade-down">
+        <h1 style="font-size: 26px">Solar Planet</h1>
+        <img class="" width="350px" height="200px" src="../images/solar.png" alt="program" />
+        <div class="flex-up">
+          <a href="https://emmanuel-odinaka.github.io/solarProject"><p class="view-live">View live</p></a>
+          <a href="https://github.com/Emmanuel-Odinaka/solarProject"><i class="fa fa-github" style="font-size:24px; padding: .5rem;"></i></a>
+        </div>
       </section>
-      <section class="box">
-        <a href="https://emmanuel-odinaka.github.io/solarProject"><img class="" width="350px" height="200px" src="../images/solar.png" alt="program" /></a>      </section>
-      <section class="box">
-        <a href="https://emmanuel-odinaka.github.io/solarProject"><img class="" width="350px" height="200px" src="../images/solar.png" alt="program" /></a>      </section>
+      <section class="box" data-aos="fade-down">
+        <h1 style="font-size: 26px">Search Users</h1>
+        <img class="" width="350px" height="200px" src="../images/Search.png" alt="program" />      
+        <div class="flex-up">
+          <a href="https://emmanuel-odinaka.github.io/Search-user/"><p class="view-live">View live</p></a>
+          <a href="https://github.com/Emmanuel-Odinaka/Search-user"><i class="fa fa-github" style="font-size:24px; padding: .5rem;"></i></a>
+        </div>
+      </section>
+    </div>
+    <!-- Fun -->
+    <header><span id="work" style="margin-bottom: 20px;" class="underline" data-aos="fade-down">Tiidelab Moments</span></header>
+    <div class="parent-grid" data-aos="fade-down">
+      <div class="div1"><img class="fun_img" src="./images/fun1.jpg" alt="fun" /> </div>
+      <div class="div2"><img class="fun_img" src="./images/fun2.jpg" alt="fun" /> </div>
+      <div class="div3"><img class="fun_img" src="./images/fun3.jpg" alt="fun" /> </div>
+      <div class="div4"><img class="fun_img" src="./images/fun4.jpg" alt="fun" /> </div>
+      <div class="div5"><img class="fun_img" src="./images/fun5.jpg" alt="fun" /> </div>
+      <div class="div6"><img class="fun_img" src="./images/fun6.jpg" alt="fun" /> </div>
     </div>
     <!-- contact -->
-    <header><span class="underline">Contact</span></header>
+    <header><span id="contact" class="underline" data-aos="fade-down">Contact</span></header>
     <section class="contact">
       <form action="" class="form">
-        <input type="text" placeholder="Name" />
-        <input type="email" placeholder="Email" />
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        <button class="button">Send</button>
+        <input type="text" placeholder="Name" data-aos="fade-down" style="border: 2px solid #333"/>
+        <input type="email" placeholder="Email" data-aos="fade-down" style="border: 2px solid #333"/>
+        <textarea name="" id="" cols="30" rows="10" data-aos="fade-down" style="border: 2px solid #333"></textarea>
+        <button class="button" data-aos="fade-down">Send</button>
       </form>
     </section>
     <!-- footer -->
     <footer>
       <h1>Odinaka</h1>
       <div class="social-media">
-        <i class="fa fa-linkedin" style="font-size:24px; padding: .5rem;"></i>
-        <i class="fa fa-twitter" style="font-size:24px; padding: .5rem;"></i>
-        <i class="fa fa-github" style="font-size:24px; padding: .5rem;"></i>
+        <a href="https://www.linkedin.com/in/odinaka-emmanuel-65673b148"><i class="fa fa-linkedin" style="font-size:24px; padding: .5rem; cursor: pointer;"></i></a>
+        <a href="https://twitter.com/emmodi10"><i class="fa fa-twitter" style="font-size:24px; padding: .5rem; cursor: pointer;"></i></a>
+        <a href="https://github.com/Emmanuel-Odinaka"><i class="fa fa-github" style="font-size:24px; padding: .5rem; cursor: pointer;"></i></a>
       </div>
       <p>&copy; Emmanuel Odinaka. All rights reserved</p>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        easing: 'ease-in-out',
+      });
+    </script>
   </body>
 </html>
