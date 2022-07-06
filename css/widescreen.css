@@ -5,4 +5,7 @@
     .main-container, .about-container, .skills, .project {
         padding: 0 10rem;
       }
+    .hide-me {
+        display: none;
+    }
 }
